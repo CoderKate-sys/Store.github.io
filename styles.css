@@ -1,0 +1,308 @@
+body {
+  font-family: font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  margin-top: 60px; 
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+}
+
+#header-img {
+  height: auto;
+  max-width: 150px; 
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(50, 156, 50);
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+ 
+.container {
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 800px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+#Login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0px;
+}
+
+#Login h2 {
+  color: rgb(27, 114, 27);
+}
+
+.toggle {
+  text-decoration: none;
+  color: rgb(27, 114, 27);
+}
+
+.toggle:hover {
+  text-decoration: underline;
+  color: rgb(50, 156, 50);
+}
+
+#Login input[type="email"]{
+  margin: 10px;
+  border-color: rgb(50, 156, 50);
+}
+
+#Login input[type="password"]{
+  margin: 10px;
+  border-color: rgb(50, 156, 50);
+}
+
+#submit {
+  text-align: center;
+  color: black;
+  font-size: 90%;
+  font-weight: bold;
+  border-style: none;
+  background-color: #d1d1d1;
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+#submit:hover{
+  font-size: 100%;
+}
+
+#Features h3 {
+  text-align: center;
+  color:rgb(27, 114, 27);
+}
+
+#Features li {
+  text-align: left;
+  color: #333;
+  font-weight: bolder;
+}
+
+
+#Method h3 {
+  text-align: center;
+  color: rgb(27, 114, 27);
+}
+
+#Method h4 {
+  text-align: center;
+  color: #5f5f5f;
+}
+
+iframe {
+  display: block;
+  margin: 20px;
+  border-radius: 8px;
+  width: 95%; 
+  max-width: 800px; 
+  height: 450px; 
+}
+
+#Products img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+#Products {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+h3 {
+  text-align: center;
+  justify-content: center;
+  color: rgb(27, 114, 27);
+}
+
+#Wicked {
+  text-align: center;
+  width: 400px;
+  height: 700px;
+  margin: 20px auto;
+  border: 2px solid #333;
+  border-radius: 3px;
+  display: block;
+  }
+
+#Ari {
+  width: 300px;
+  height: auto;
+}
+
+#XOXO {
+  text-align: center;
+  width: 400px;
+  height: 700px;
+  margin: 20px auto;
+  border: 2px solid #333;
+  border-radius: 3px;
+  display: block;
+  }
+
+#Enha {
+  width: 300px;
+  height: auto;
+}
+
+.level {
+  color: rgb(50, 156, 50);
+  padding: 15px 0;
+  width: 100%;
+  font-size: large;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#Products h2 {
+  text-align: center;
+  color: rgb(27, 114, 27);
+}
+
+#Products ol{
+  list-style: none;
+  text-align: left;
+}
+
+.btn {
+  border: none;
+  padding: 0 20px;
+  height: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn:hover{
+  color: rgb(27, 114, 27);
+  font-size: medium;
+}
+  
+footer {
+  background-color: #eee; 
+  display: flex;
+  justify-content: flex-end; 
+  padding-right: 20px;
+}
+
+footer ul {
+  display: flex;
+  align-items: right;
+  margin: 0; 
+  padding: 0;
+  list-style: none;
+}
+
+footer ul a{
+text-decoration: none;
+color: black;
+font-weight: bold ;
+}
+
+footer ul a:hover{
+text-decoration: solid;
+color: rgb(50, 156, 50);
+font-size: large;
+}
+
+footer li {
+margin: 10px;
+}
+
+footer span {
+ display: flex;
+ align-items: center;
+  margin-left: 10px;
+  font-weight: 500px;
+}
+
+/* tablets */
+
+@media (max-width: 768px) { 
+
+body {
+  padding-top: 50px; 
+}
+
+nav ul {
+  flex-direction: column;
+  gap: 10px;
+}
+
+#Products {
+  flex-direction: column;
+  
+}
+
+iframe {
+  display: block;
+  margin: auto;
+}
+}
+
+/* Phones */
+
+@media (max-width: 480px) { 
+  body {
+    padding-top: 50px; 
+  }
+  
+  nav ul {
+    flex-direction: column;
+  }
+
+  .container {
+  margin: 10px auto;
+  padding: 10px;
+  }
+
+  iframe {
+  display: block;
+  margin: auto;
+  }
+}
